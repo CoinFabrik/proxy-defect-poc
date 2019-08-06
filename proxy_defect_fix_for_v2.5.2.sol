@@ -203,7 +203,7 @@ contract BaseAdminUpgradeabilityProxy is BaseUpgradeabilityProxy {
 
   /**
    * @dev Declarative boolean constants for the payability parameter of the `ifAdmin` modifier.
-   * All `ifAdmin` modifier instances should use one of these two.
+   * All `ifAdmin` modifier arguments should be one of these two.
    */
 
   bool internal constant IS_PAYABLE_FOR_ADMIN = true;
