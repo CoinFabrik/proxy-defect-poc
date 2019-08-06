@@ -1,0 +1,252 @@
+{
+  "accounts": {
+    "account{0}": "0xca35b7d915458ef540ade6068dfe2f44e8fa733c",
+    "account{1}": "0x14723a09acff6d2a60dcdf7aa4aff308fddc160c"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1542285126448,
+      "record": {
+        "value": "0",
+        "parameters": [],
+        "abi": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "contractName": "Test",
+        "bytecode": "6080604052348015600f57600080fd5b5060ed8061001e6000396000f30060806040526004361060485763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633659cfe68114604d5780638f28397014604d575b600080fd5b606c73ffffffffffffffffffffffffffffffffffffffff60043516606e565b005b6040805173ffffffffffffffffffffffffffffffffffffffff8316815234602082015281517f5142e8e2b8bfd5f7cc6d4b72ed6f330fe37baaeef367db33ee530c6bac469265929181900390910190a1505600a165627a7a72305820d27047474c14e68dd162f19930433d03de1005be3eb18b396b39fbde64bfa28c0029",
+        "linkReferences": {},
+        "name": "",
+        "inputs": "()",
+        "type": "constructor",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1542285254614,
+      "record": {
+        "value": "0",
+        "parameters": [
+          "0xbbf289d846208c16edc8474705c748aff07732db",
+          []
+        ],
+        "abi": "0xad315e209dd62516ab8c7d1c2d8c3c206525501ebef91d12c34431f9ea255371",
+        "contractName": "Proxy",
+        "bytecode": "60806040526040516108a53803806108a583398101604081815282516020808501517f6f72672e7a657070656c696e6f732e70726f78792e696d706c656d656e74617485527f696f6e000000000000000000000000000000000000000000000000000000000091850191909152915192839003602301909220919201906000805160206108858339815191521461009257fe5b604080517f6f72672e7a657070656c696e6f732e70726f78792e61646d696e0000000000008152905190819003601a019020600080516020610865833981519152146100da57fe5b6100ec3364010000000061018f810204565b6100fe826401000000006101a1810204565b6000815111156101885781600160a060020a03168160405180828051906020019080838360005b8381101561013d578181015183820152602001610125565b50505050905090810190601f16801561016a5780820380516001836020036101000a031916815260200191505b50915050600060405180830381855af4915050151561018857600080fd5b505061029b565b60008051602061086583398151915255565b60006101b582640100000000610293810204565b151561024857604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603b60248201527f43616e6e6f742073657420612070726f787920696d706c656d656e746174696f60448201527f6e20746f2061206e6f6e2d636f6e747261637420616464726573730000000000606482015290519081900360840190fd5b50600080516020610885833981519152818155604051600160a060020a038316907fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b90600090a25050565b6000903b1190565b6105bb806102aa6000396000f30060806040526004361061006c5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633659cfe681146100765780634f1ef286146100975780635c60da1b146100b75780638f283970146100e8578063f851a44014610109575b61007461011e565b005b34801561008257600080fd5b50610074600160a060020a03600435166101d5565b61007460048035600160a060020a0316906024803590810191013561020f565b3480156100c357600080fd5b506100cc610284565b60408051600160a060020a039092168252519081900360200190f35b3480156100f457600080fd5b50610074600160a060020a03600435166102c1565b34801561011557600080fd5b506100cc6103d3565b6101266103fa565b600160a060020a03163314156101c357604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603260248201527f43616e6e6f742063616c6c2066616c6c6261636b2066756e6374696f6e20667260448201527f6f6d207468652070726f78792061646d696e0000000000000000000000000000606482015290519081900360840190fd5b6101d36101ce61041f565b610444565b565b6101dd6103fa565b600160a060020a031633600160a060020a03161415610204576101ff81610468565b61020c565b61020c61011e565b50565b6102176103fa565b600160a060020a031633600160a060020a031614156102775761023983610468565b82600160a060020a0316828260405180838380828437820191505092505050600060405180830381855af4915050151561027257600080fd5b61027f565b61027f61011e565b505050565b600061028e6103fa565b600160a060020a031633600160a060020a031614156102b6576102af61041f565b90506102be565b6102be61011e565b90565b6102c96103fa565b600160a060020a031633600160a060020a0316141561020457600160a060020a038116151561037f57604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603660248201527f43616e6e6f74206368616e6765207468652061646d696e206f6620612070726f60448201527f787920746f20746865207a65726f206164647265737300000000000000000000606482015290519081900360840190fd5b7f7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f6103a86103fa565b60408051600160a060020a03928316815291841660208301528051918290030190a16101ff81610563565b60006103dd6103fa565b600160a060020a031633600160a060020a031614156102b6576102af5b7f10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b5490565b7f7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c35490565b3660008037600080366000845af43d6000803e808015610463573d6000f35b3d6000fd5b600061047382610587565b151561050657604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603b60248201527f43616e6e6f742073657420612070726f787920696d706c656d656e746174696f60448201527f6e20746f2061206e6f6e2d636f6e747261637420616464726573730000000000606482015290519081900360840190fd5b507f7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3818155604051600160a060020a038316907fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b90600090a25050565b7f10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b55565b6000903b11905600a165627a7a72305820787936e8d49c75b4f891350af92930ac5163fbed40ebd9ba4895e1667ed95e78002910d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3",
+        "linkReferences": {},
+        "name": "",
+        "inputs": "(address,bytes)",
+        "type": "constructor",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1542285314304,
+      "record": {
+        "value": "0",
+        "parameters": [
+          "0xbbf289d846208c16edc8474705c748aff07732db"
+        ],
+        "to": "created{1542285254614}",
+        "abi": "0xad315e209dd62516ab8c7d1c2d8c3c206525501ebef91d12c34431f9ea255371",
+        "name": "changeAdmin",
+        "inputs": "(address)",
+        "type": "function",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1542285658398,
+      "record": {
+        "value": "100000",
+        "parameters": [
+          "0xbbf289d846208c16edc8474705c748aff07732db"
+        ],
+        "to": "created{1542285254614}",
+        "abi": "0xad315e209dd62516ab8c7d1c2d8c3c206525501ebef91d12c34431f9ea255371",
+        "name": "changeAdmin",
+        "inputs": "(address)",
+        "type": "function",
+        "from": "account{1}"
+      }
+    }
+  ],
+  "abis": {
+    "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "name": "changeAdmin",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "some_address",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "eth_received",
+            "type": "uint256"
+          }
+        ],
+        "name": "TestSucceeded",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "newImplementation",
+            "type": "address"
+          }
+        ],
+        "name": "upgradeTo",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+      }
+    ],
+    "0xad315e209dd62516ab8c7d1c2d8c3c206525501ebef91d12c34431f9ea255371": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "name": "changeAdmin",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "implementation",
+            "type": "address"
+          }
+        ],
+        "name": "Upgraded",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "previousAdmin",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "name": "AdminChanged",
+        "type": "event"
+      },
+      {
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "fallback"
+      },
+      {
+        "inputs": [
+          {
+            "name": "_implementation",
+            "type": "address"
+          },
+          {
+            "name": "_data",
+            "type": "bytes"
+          }
+        ],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "constructor"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "newImplementation",
+            "type": "address"
+          }
+        ],
+        "name": "upgradeTo",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "admin",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "implementation",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
+}
