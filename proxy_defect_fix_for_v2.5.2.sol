@@ -202,7 +202,7 @@ contract BaseAdminUpgradeabilityProxy is BaseUpgradeabilityProxy {
   bytes32 internal constant ADMIN_SLOT = 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103;
 
   /**
-   * @dev Declarative boolean constants for the `ifAdmin` modifier.
+   * @dev Declarative boolean constants for the payability parameter of the `ifAdmin` modifier.
    * All `ifAdmin` modifier instances should use one of these two.
    */
 
@@ -213,8 +213,7 @@ contract BaseAdminUpgradeabilityProxy is BaseUpgradeabilityProxy {
    * @dev Modifier to check whether the `msg.sender` is the admin.
    * If it is, it will run the function. Otherwise, it will delegate the call
    * to the implementation.
-   * This modifier is necessary to allow the proxy to be transparent for user functions
-   * that clash with one of the administrative functions and receive value.
+   * @param isPayableForAdmin If true, the administrative function can receive nonzero `msg.value`.
    */
   modifier ifAdmin(bool isPayableForAdmin) {
     if (msg.sender == _admin()) {
@@ -339,7 +338,7 @@ contract PartiallyOpaquedContract {
   event TestSucceeded(address some_address, uint256 eth_received);
 
   /** 
-   * @dev Calling through a proxy without value emits the event successfully.
+   * @dev Calling through a proxy with zero value emits the event successfully.
    * @param newAdmin Address to emit in TestSucceeded event.
    */
   function changeAdmin(address newAdmin) payable external {
@@ -347,7 +346,7 @@ contract PartiallyOpaquedContract {
   }
 
   /**
-   * @dev Calling through a proxy without value emits the event successfully.
+   * @dev Calling through a proxy with zero value emits the event successfully.
    * @param newImplementation Address to emit in TestSucceeded event.
    */
   function upgradeTo(address newImplementation) payable external {
