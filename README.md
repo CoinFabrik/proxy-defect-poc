@@ -39,4 +39,8 @@ PoC fix:
 - [Flattened fixed contract](proxy_defect_fix_for_v2.5.2.sol)
 - [Remix scenario](Remix_Scenario_of_fix_for_v2.5.2.json)
 
+## Consequences of this defect
+
+A proxy implementation that is not transparent is subject to the possibility of [function name clashing](https://forum.openzeppelin.com/t/beware-of-the-proxy-learn-how-to-exploit-function-clashing/1070) with its proxied contract. This means that the proxy and proxied contracts should be checked for function name clashes before the initial deployment and afterwards before each upgrade on the proxy and upgrade candidate contract.
+
 [v2.5.2 openzeppelin-sdk upgradeability contracts]: https://github.com/OpenZeppelin/openzeppelin-sdk/tree/v2.5.2/packages/lib/contracts/upgradeability
